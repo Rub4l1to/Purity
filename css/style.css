@@ -546,18 +546,6 @@ body {
 .row {
   max-width: 114rem;
   margin: 0 auto; }
-  @media only screen and (max-width: 75em) {
-    .row {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column; } }
-  @media only screen and (max-width: 56.25em) {
-    .row {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column; } }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
     @media only screen and (max-width: 56.25em) {
