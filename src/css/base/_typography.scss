@@ -72,11 +72,9 @@ body {
 }
 
 .paragraph {
-    width: 90%;
     font-size: $default-font-size;
-    text-align: justify;
 
     &:not(:last-child) {
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
     }
 }

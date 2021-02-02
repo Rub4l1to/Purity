@@ -1,44 +1,38 @@
 .section-about {
-  background-color: $color-grey-light-1;
-  padding: 25rem 0 40vh;
-  margin-top: -20vh;
-  @include flexbox(center, center, column);
+    background-color: $color-grey-light-1;
+    padding: 25rem 0;
+    margin-top: -20vh;
 
-  @include respond(phone) {
-    padding: 20rem 0 15rem;
-  }
-
-  @include respond(tab-port) {
-    padding: 25rem 0 55rem;
-  }
-
-  @include respond(standar-desktop) {
-    padding: 25rem 0 30rem;
-  }
+   
 }
 
 .section-features {
-  @include flexbox(center, center, column);
-  flex-wrap: wrap;
-
-  background-image: linear-gradient(
-      to right bottom,
-      rgba($color-primary-light, 0.8),
-      rgba($color-primary-dark, 0.8)
-    ),
+    padding: 20rem 0;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.8),
+        rgba($color-primary-dark, 0.8)),
     url(../img/about-bg.jpg);
+    background-size: cover;
+    transform: skewY(-7deg);
+    margin-top: -10rem;
 
-  padding: 20rem 0;
-  background-size: cover;
-  transform: skewY(-7deg);
-  margin-top: -10rem;
-  & > * {
-    transform: skewY(7deg);
-  }
+    & > * {
+        transform: skewY(7deg);
+    }
+
+    @include respond(tab-land)   {
+        padding: 10rem 0;
+    }
+    @include respond(tab-port )   {
+        padding: 10rem 10rem;
+    }
+
 }
 
 .section-tours {
-  background-color: $color-grey-light-1;
-  padding: 25rem 0 15rem 0;
-  margin-top: -15rem;
+    background-color: $color-grey-light-1;
+    padding: 25rem 0 15rem 0;
+    margin-top: -15rem;
+
 }

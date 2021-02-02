@@ -1,67 +1,59 @@
 .composition {
   position: relative;
-  margin-top: 2rem;
-  @include respond(phone) {
-    display: none;
-  }
-  @include respond(tab-port) {
-    display: block;
-    margin-top: 4rem;
-  }
 
   &__photo {
-    width: 50%;
+    width: 55%;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
     border-radius: 2px;
     position: absolute;
     z-index: 10;
     transition: all 0.2s;
     outline-offset: 2rem;
-    box-shadow: 0 1.5rem 3rem rgba($color-black, 0.2);
+
+    // @include respond(tab-port) {
+    //     float: left;
+    //     position: relative;
+    //     width: 33.33333333%;
+    //     box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
+    // }
 
     @include respond(tab-port) {
-      width: 40%;
-    }
-    @include respond(standar-desktop) {
-      width: 50%;
+      float: left;
+      position: relative;
+      width: 33.33333333%;
+      box-shadow: 0 1.5rem 3rem rgba($color-black, 0.2);
     }
 
     &--p1 {
-      left: 2rem;
+      left: 0rem;
       top: -2rem;
+      @include respond(tab-port) {
+        top: 0;
+      }
     }
 
     &--p2 {
-      right: -10rem;
+      right: 0;
       top: 2rem;
-
       @include respond(tab-port) {
-        left: 45rem;
-      }
-      @include respond(standar-desktop) {
-        left: 40rem;
-      }
-      @include respond(big-desktop) {
-        left: 30rem;
+        top: 0rem;
+        left: 2rem;
       }
     }
 
     &--p3 {
-      left: 18rem;
+      left: 20%;
       top: 10rem;
-
+     
       @include respond(tab-port) {
-        left: 24rem;
-        top: 12rem;
-      }
-      @include respond(big-desktop) {
-        left: 15rem;
+        top: 0rem;
+        left: 4rem;
       }
     }
 
     &:hover {
-      outline: 1rem solid $color-primary;
-      transform: scale(1.01) translateY(-0.3rem);
+      outline: 1.5rem solid $color-primary;
+      transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
       z-index: 20;
     }
