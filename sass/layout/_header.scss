@@ -57,7 +57,7 @@
     height: auto;
 
     @include respond(phone) {
-      width: 8rem;
+      width: 10em;
     }
     @include respond(tab-port) {
       width: 10rem;
