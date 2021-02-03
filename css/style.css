@@ -269,7 +269,7 @@ body {
     .card__picture--4 {
       background-image: linear-gradient(to right bottom, #c949c9, #7a1175), url(./img/piruleta.jpg); }
     .card__picture--5 {
-      background-image: linear-gradient(to right bottom, #76e95a, #067a0f), url(./img/menta.jpg); }
+      background-image: linear-gradient(to right bottom, #76e95a, #067a0f), url(../../img/menta.jpg); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
