@@ -30,12 +30,11 @@
 *::after,
 *::before {
   margin: 0;
-  padding: 0;
-  box-sizing: inherit; }
+  padding: 0; }
 
 html {
-  font-size: 62.5%;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  font-size: 62.5%; }
   @media only screen and (min-width: 72em) {
     html {
       font-size: 56.25%; } }
