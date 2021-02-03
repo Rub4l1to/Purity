@@ -261,15 +261,15 @@ body {
     border-top-right-radius: 3px;
     background-position: center center; }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #e22f29, #bb1414), url(../img/frutos.jpg); }
+      background-image: linear-gradient(to right bottom, #e22f29, #bb1414), url("../img/frutos.jpg"); }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #4254a1, #1034d3), url(../img/nenuco.jpg); }
+      background-image: linear-gradient(to right bottom, #4254a1, #1034d3), url("../img/nenuco.jpg"); }
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #bd806e, #8b662f), url(../img/coco.jpg); }
+      background-image: linear-gradient(to right bottom, #bd806e, #8b662f), url("../img/coco.jpg"); }
     .card__picture--4 {
-      background-image: linear-gradient(to right bottom, #c949c9, #7a1175), url(../img/piruleta.jpg); }
+      background-image: linear-gradient(to right bottom, #c949c9, #7a1175), url("../img/piruleta.jpg"); }
     .card__picture--5 {
-      background-image: linear-gradient(to right bottom, #76e95a, #067a0f), url(../img/menta.jpg); }
+      background-image: linear-gradient(to right bottom, #76e95a, #067a0f), url("../img/menta.jpg"); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
