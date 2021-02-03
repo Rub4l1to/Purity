@@ -33,24 +33,28 @@
     width: calc((100% - #{$gutter-horizontal}) / 2);
 
     @include respond(phone) {
-      width: calc((90% - #{$gutter-horizontal}));
+      width: calc((95% - #{$gutter-horizontal}));
     }
+    @include respond(tab-port) {
+      width: calc(85% - 2 *#{$gutter-horizontal});
+    }
+
     @include respond(standar-desktop) {
-      width: calc((100% - #{$gutter-horizontal}) / 1);
+      width: calc(95% - #{$gutter-horizontal});
     }
   }
 
   .col-1-of-3 {
-    width: calc((100% - 1 * #{$gutter-horizontal}) / 3);
+    width: calc((100% - 1 #{$gutter-horizontal}) / 3);
 
     @include respond(phone) {
-      width: calc((90% - #{$gutter-horizontal}) / 1);
+      width: calc(100% - 3 * #{$gutter-horizontal});
     }
     @include respond(tab-port) {
-      width: calc((100% - #{$gutter-horizontal-negative}) / 1);
+      width: calc(90% - #{$gutter-horizontal-negative});
     }
     @include respond(tab-land) {
-      width: calc((100% - #{$gutter-horizontal-negative}) / 1);
+      width: calc(90% - #{$gutter-horizontal-negative});
     }
   }
 }

@@ -223,7 +223,7 @@ body {
   margin: 2rem 1rem; }
   .card__side {
     height: 52rem;
-    transition: all .8s ease;
+    transition: all 0.8s ease;
     position: absolute;
     top: 0;
     left: 0;
@@ -238,11 +238,15 @@ body {
     .card__side--back {
       transform: rotateY(180deg); }
       .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+        background-image: linear-gradient(to right bottom, #e22f29, #bb1414); }
       .card__side--back-2 {
         background-image: linear-gradient(to right bottom, #4254a1, #1034d3); }
       .card__side--back-3 {
-        background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
+        background-image: linear-gradient(to right bottom, #bd806e, #8b662f); }
+      .card__side--back-4 {
+        background-image: linear-gradient(to right bottom, #c949c9, #7a1175); }
+      .card__side--back-5 {
+        background-image: linear-gradient(to right bottom, #76e95a, #067a0f); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -254,13 +258,18 @@ body {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     border-top-left-radius: 3px;
-    border-top-right-radius: 3px; }
+    border-top-right-radius: 3px;
+    background-position: center center; }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/nat-5.jpg); }
+      background-image: linear-gradient(to right bottom, #e22f29, #bb1414), url(../../img/frutos.jpg); }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #4254a1, #1034d3), url(../img/nat-6.jpg); }
+      background-image: linear-gradient(to right bottom, #4254a1, #1034d3), url(../../img/nenuco.jpg); }
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/nat-7.jpg); }
+      background-image: linear-gradient(to right bottom, #bd806e, #8b662f), url(../../img/coco.jpg); }
+    .card__picture--4 {
+      background-image: linear-gradient(to right bottom, #c949c9, #7a1175), url(../../img/piruleta.jpg); }
+    .card__picture--5 {
+      background-image: linear-gradient(to right bottom, #76e95a, #067a0f), url(../../img/menta.jpg); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -276,11 +285,15 @@ body {
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
     .card__heading-span--1 {
-      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(226, 47, 41, 0.85), rgba(187, 20, 20, 0.85)); }
     .card__heading-span--2 {
       background-image: linear-gradient(to right bottom, rgba(66, 84, 161, 0.85), rgba(16, 52, 211, 0.85)); }
     .card__heading-span--3 {
-      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(189, 128, 110, 0.85), rgba(139, 102, 47, 0.85)); }
+    .card__heading-span--4 {
+      background-image: linear-gradient(to right bottom, rgba(201, 73, 201, 0.85), rgba(122, 17, 117, 0.85)); }
+    .card__heading-span--5 {
+      background-image: linear-gradient(to right bottom, rgba(118, 233, 90, 0.85), rgba(6, 122, 15, 0.85)); }
   .card__details {
     padding: 3rem; }
     .card__details ul {
@@ -348,7 +361,7 @@ body {
   @media only screen and (min-width: 56.25em) {
     .composition {
       display: block;
-      margin-top: 4rem; } }
+      margin-top: 7rem; } }
   .composition__photo {
     width: 50%;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
@@ -424,6 +437,7 @@ body {
 
 .popup {
   height: 100vh;
+  max-height: 100vh;
   width: 100%;
   position: fixed;
   top: 0;
@@ -571,21 +585,24 @@ body {
     width: calc((100% - 2rem) / 2); }
     @media only screen and (min-width: 0em) {
       .row .col-1-of-2 {
-        width: calc((90% - 2rem)); } }
+        width: calc((95% - 2rem)); } }
+    @media only screen and (min-width: 56.25em) {
+      .row .col-1-of-2 {
+        width: calc(85% - 2 *2rem); } }
     @media only screen and (min-width: 85em) {
       .row .col-1-of-2 {
-        width: calc((100% - 2rem) / 1); } }
+        width: calc(95% - 2rem); } }
   .row .col-1-of-3 {
-    width: calc((100% - 1 * 2rem) / 3); }
+    width: calc((100% - 1 2rem) / 3); }
     @media only screen and (min-width: 0em) {
       .row .col-1-of-3 {
-        width: calc((90% - 2rem) / 1); } }
+        width: calc(100% - 3 * 2rem); } }
     @media only screen and (min-width: 56.25em) {
       .row .col-1-of-3 {
-        width: calc((100% - -1rem) / 1); } }
+        width: calc(90% - -1rem); } }
     @media only screen and (min-width: 72em) {
       .row .col-1-of-3 {
-        width: calc((100% - -1rem) / 1); } }
+        width: calc(90% - -1rem); } }
 
 .header {
   height: 85vh;
@@ -627,7 +644,7 @@ body {
     height: auto; }
     @media only screen and (min-width: 0em) {
       .header__logo {
-        width: 8rem; } }
+        width: 10em; } }
     @media only screen and (min-width: 56.25em) {
       .header__logo {
         width: 10rem; } }
@@ -778,7 +795,7 @@ body {
 
 .section-about {
   background-color: #f7f7f7;
-  padding: 25rem 0 40vh;
+  padding: 30rem 0 40vh;
   margin-top: -20vh;
   display: flex;
   justify-content: center;
