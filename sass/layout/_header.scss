@@ -8,7 +8,6 @@
     url(../img/header-bg.jpg);
   background-size: cover;
   background-position: top;
-  background-attachment: fixed;
   position: relative;
 
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
